@@ -9,8 +9,8 @@ def index():
 @app.route('/blog')
 def blog():
     posts = [
-        {'title': 'Первая запись', 'content': 'Содержание первой записи блога'},
-        {'title': 'Вторая запись', 'content': 'Содержание второй записи блога'}
+        {'title': 'Запись №1', 'content': 'Здесь было содержание первой записи блога'},
+        {'title': 'Запись №2', 'content': 'Здесь было содержание второй записи блога'}
     ]
     return render_template('blog.html', title='Блог', posts=posts)
 
